@@ -10,7 +10,10 @@ A collection of square plates created with the Plateit number plate generator an
 // Document
 plate.document.setWidth(279)
 plate.document.setHeight(203)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText(['NG25', 'XYZ'])
@@ -45,7 +48,10 @@ plate.render()
 // Document
 plate.document.setWidth(279)
 plate.document.setHeight(203)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText(['NG25', 'XYZ'])
@@ -92,7 +98,10 @@ plate.render()
 // Document
 plate.document.setWidth(279)
 plate.document.setHeight(203)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText(['NG25', 'XYZ'])
@@ -141,7 +150,10 @@ plate.render()
 // Document
 plate.document.setWidth(229)
 plate.document.setHeight(178)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText(['NG25', 'XYZ'])
@@ -174,7 +186,10 @@ plate.render()
 // Document
 plate.document.setWidth(229)
 plate.document.setHeight(178)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText(['NG25', 'XYZ'])
@@ -224,7 +239,10 @@ plate.render()
 // Document
 plate.document.setWidth(279)
 plate.document.setHeight(203)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText(['NG25', 'XYZ'])

@@ -10,7 +10,10 @@ A collection of oblong plates created with the Plateit number plate generator an
 // Document
 plate.document.setWidth(520)
 plate.document.setHeight(111)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText('NG25 XYZ')
@@ -41,7 +44,10 @@ plate.render()
 // Document
 plate.document.setWidth(520)
 plate.document.setHeight(111)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText('NG25 XYZ')
@@ -87,7 +93,10 @@ plate.render()
 // Document
 plate.document.setWidth(520)
 plate.document.setHeight(111)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText('NG25 XYZ')
@@ -129,7 +138,10 @@ plate.render().then(() => {
 // Document
 plate.document.setWidth(520)
 plate.document.setHeight(111)
-plate.document.setBackgroundColour('yellow')
+
+// Background
+plate.background.setBackgroundColour('yellow')
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText('NG25 XYZ')
@@ -167,7 +179,10 @@ plate.render()
 // Document
 plate.document.setWidth(520)
 plate.document.setHeight(111)
-plate.document.setBackgroundColour(['lightgray', 'gray', 'y'])
+
+// Background
+plate.background.setBackgroundColour(['lightgray', 'gray', 'y'])
+plate.background.utilise(true)
 
 // Reg
 plate.reg.setText('NG25 XYZ')

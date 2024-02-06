@@ -15,6 +15,7 @@ You can access the plate's design components by referencing the following keys:
 | Key | Returns | Info |
 | --- | --- | --- |
 | `plate.document` | [Document](components/document.md) | Responsble for setting the document (plate) size. |
+| `plate.background` | [Background](components/background.md) | Responsble for setting the preview background colour. |
 | `plate.border` | [Border](components/border.md) | Responsble for manipulating the border. |
 | `plate.reg` | [Registration](components/registration.md) | Responsble for manipulating the registration. |
 | `plate.regOverlay` | [Registration](components/registration.md) | Responsble for manipulating the overlay registration ([read more here](#)). |

@@ -1,6 +1,6 @@
 # BottomLine
 
-The design properties for the bottom Line component are as follows:
+The design properties for the bottom line component are as follows:
 
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |

@@ -9,6 +9,7 @@
 
 * Components
   * [Document](components/document.md)
+  * [Background](components/background.md)
   * [Border](components/border.md)
   * [Registration](components/registration.md)
   * [SideBadge](components/side-badge.md)

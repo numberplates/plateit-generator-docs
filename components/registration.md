@@ -9,7 +9,7 @@ The design properties for the registration component are as follows:
 | **textLineHeight** | number | 79 | The height in mm of the text. |
 | **textLineGap** | number | 19 | For multi-line plates, this is the gap in mm between each line. |
 | **textColour** | string/array | 'black' | The [colour](other/colour.md) of the text. |
-| **textCutOut** | boolean/null | null | [See metal plates](/examples/oblongs.md#metal-oblong).  |
+| **textIsCutOut** | boolean/null | null | [See metal plates](/examples/oblongs.md#metal-oblong).  |
 
 ## Methods <!-- {docsify-ignore} -->
 
