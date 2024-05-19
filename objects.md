@@ -24,6 +24,13 @@ You can access the plate's design components by referencing the following keys:
 | `plate.bottomLine` | [BottomLine](components/bottom-line.md) | Responsble for manipulating the bottom line. |
 | `plate.bsau` | [Bsau](components/bsau.md) | Responsble for manipulating the british standard mark. |
 
+## Additional Objects
+
+| Key | Returns | Info |
+| --- | --- | --- |
+| `plate.metadata` | [Meta](additional/meta.md) | Optionally add custom metadata. |
+| `plate.file` | [File](additional/file.md) | Methods related to importing and exporting are contained here. |
+
 ## Important Note
 
 The properties of each object are **not** designed to be altered directly.

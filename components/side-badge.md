@@ -13,7 +13,7 @@ The design properties for the side badge component are as follows:
 | **text** | string/array | '' | The side badge text. |
 | **textFontUrl** | string | '' | The path or url to the font file. |
 | **textColour** | string/array | 'white' | The [colour](other/colour.md) of the text. |
-| **textCutOut** | boolean/null | null | Cuts out the text from the background.  |
+| **textIsCutOut** | boolean/null | null | Cuts out the text from the background.  |
 
 ## Methods <!-- {docsify-ignore} -->
 

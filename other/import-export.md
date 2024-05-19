@@ -18,7 +18,6 @@ It will return an object resembling something similar to the following:
 
 ```javascript
 {
-  "version": "1.0.0",
   "document": {
     "width": 520,
     "height": 111,
@@ -45,6 +44,9 @@ It will return an object resembling something similar to the following:
     "textFontUrl": "../assets/fonts/OpenSans-Regular.ttf",
     "textHeight": 2,
     "textColour": "black"
+  },
+  "metadata": {
+    "version": "1.0.0"
   }
 }
 ```

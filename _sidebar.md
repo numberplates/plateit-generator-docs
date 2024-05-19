@@ -7,7 +7,7 @@
   * [Objects / Componenets](objects.md)
   * [Rendering](rendering.md)
 
-* Components
+* Component Objects
   * [Document](components/document.md)
   * [Background](components/background.md)
   * [Border](components/border.md)
@@ -15,6 +15,10 @@
   * [SideBadge](components/side-badge.md)
   * [BottomLine](components/bottom-line.md)
   * [Bsau](components/bsau.md)
+
+* Additonal Objects
+  * [Meta](additional/meta.md)
+  * [File](additional/file.md)
 
 * Examples
   * [Oblongs](examples/oblongs.md)
