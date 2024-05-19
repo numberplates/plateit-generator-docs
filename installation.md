@@ -1,10 +1,24 @@
 # Installation
 
-> Please note: this Plate generator is closed source. For this reason it does not have its own NPM package. Currently the only way to import the script is the old fashioned way. See below:
+## ESM Modules
+
+This javascript library does not exist in the NPM registry. It must be installed manually by running the following command, being sure to reference the correct location of the package file on your local machine:
+
+```bash
+npm install /local/path/to/plateit-generator.tgz
+```
+
+Once installed, it can be imported like so:
+
+```javascript
+import { Plate } from 'plateit-generator'
+```
+
+NPM will handle the installation of the dependencies for you.
 
 ## Direct Link
 
-Include a reference to the dependencies in the header or footer of your html file, followed by referencing the Plateit Generator:
+Alternatively, it can be imported by referencing the "IIFE" version of the script in the header or footer of your html file/s. Its dependencies must be explicitly referenced first.
 
 ```html
 <!-- dependencies -->
