@@ -4,12 +4,12 @@ The design properties for the registration component are as follows:
 
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |
-| **text** | string/array | '' | The registration text. |
+| **text** | string\|array | '' | The registration text. |
 | **textFontUrl** | string | '' | The path or url to the font file. |
 | **textLineHeight** | number | 79 | The height in mm of the text. |
 | **textLineGap** | number | 19 | For multi-line plates, this is the gap in mm between each line. |
-| **textColour** | string/array | 'black' | The [colour](other/colour.md) of the text. |
-| **textIsCutOut** | boolean/null | null | [See metal plates](/examples/oblongs.md#metal-oblong).  |
+| **textColour** | string\|array | 'black' | The [colour](other/colour.md) of the text. |
+| **textIsCutOut** | boolean | undefined | [See metal plates](/examples/oblongs.md#metal-oblong).  |
 
 ## Methods <!-- {docsify-ignore} -->
 

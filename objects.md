@@ -33,7 +33,7 @@ You can access the plate's design components by referencing the following keys:
 
 ## Important Note
 
-The properties of each object are **not** designed to be altered directly.
+!>The properties of each object are **not** designed to be altered directly.
 
 For example, don't do this:
 
@@ -48,5 +48,3 @@ plate.componentName.setExampleProperty('foo')
 ```
 
 The public methods for each component are listed in their respective documentation pages.
-
-Next up: [rendering](rendering.md).

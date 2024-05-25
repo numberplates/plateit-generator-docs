@@ -4,10 +4,10 @@ The design properties for the bottom line component are as follows:
 
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |
-| **text** | string/array | '' | The bottom line text. |
+| **text** | string\|array | '' | The bottom line text. |
 | **textFontUrl** | string | '' | The path or url to the font file. |
 | **textLineHeight** | number | 4 | The height in mm of the text. |
-| **textColour** | string/array | 'black' | The [colour](other/colour.md) of the text. |
+| **textColour** | string\|array | 'black' | The [colour](other/colour.md) of the text. |
 
 ## Methods <!-- {docsify-ignore} -->
 

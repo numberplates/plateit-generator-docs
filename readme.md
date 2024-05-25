@@ -25,5 +25,6 @@ Nowadays, modern browsers are consistent, so we can safely render number plate p
 
 The following functionality has been identified for future development:
 
-* Custom side badges (uploaded by customer)
-* Shaped plates
+- [X] Metadata
+- [ ] Custom side badges (uploaded by customer)
+- [ ] Shaped plates

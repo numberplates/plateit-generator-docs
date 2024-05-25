@@ -4,7 +4,7 @@ The design properties for the background component are as follows:
 
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |
-| **backgroundColour** | string/array | 'none' | The [colour](other/colour.md) of the background. |
+| **backgroundColour** | string\|array | 'none' | The [colour](other/colour.md) of the background. |
 | **isPreviewOnly** | boolean | true | If true, the background is for preview purposes only and will not be printed. |
 
 ## Methods <!-- {docsify-ignore} -->
@@ -21,13 +21,7 @@ Dictates whether the background should be for preview purposes only. It is `true
 
 Returns: `Background`
 
-> If the background is intended for preview purposes only, the background element will still be present in the final SVG file. However, it contains a "do not print" instruction to ensure it is stripped out when being processed for printing by the server-side Plateit API. If you want to remove it entirely from the SVG document, un-utilise it using the `utilise()` method instead (see below).
-
-### render()
-
-Renders the Background component only.
-
-Returns: `Promise`
+!> If the background is intended for preview purposes only, the background element will still be present in the final SVG file. However, it contains a "do not print" instruction to ensure it is stripped out when being processed for printing by the server-side Plateit API. If you want to remove it entirely from the SVG document, un-utilise it using the `utilise()` method instead (see below).
 
 ### utilise()
 
@@ -40,6 +34,12 @@ Returns: `Background`
 Use to check if the Background component is being utilised or not.
 
 Returns: `boolean`
+
+### render()
+
+Renders the Background component only.
+
+Returns: `Promise`
 
 ### reset()
 

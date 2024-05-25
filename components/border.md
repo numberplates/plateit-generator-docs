@@ -5,10 +5,10 @@ The design properties for the border component are as follows:
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |
 | **thickness** | number | 0 | The thickness of the border in mm. |
-| **colour** | string/array | 'black' | The border [colour](other/colour.md). |
+| **colour** | string\|array | 'black' | The border [colour](other/colour.md). |
 | **radius** | number | 3 | The radius of border's corners. |
 | **innerMargin** | number | 5 | The minimum gap between border and inner plater content. |
-| **innerColour** | string/array/null | null | The inner fill [colour](other/colour.md) typically used for [metal plates](/examples/oblongs.md#metal-oblong). |
+| **innerColour** | string\|array\|null | undefined | The inner fill [colour](other/colour.md) typically used for [metal plates](/examples/oblongs.md#metal-oblong). |
 
 ## Methods <!-- {docsify-ignore} -->
 
