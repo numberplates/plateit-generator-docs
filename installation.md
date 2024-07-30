@@ -16,6 +16,8 @@ import { Plate } from 'plateit-generator'
 
 NPM will handle the installation of the dependencies for you.
 
+For running the application on a server, please refer to [this short guide](server.md).
+
 ## Direct Link
 
 Alternatively, it can be imported by referencing the "IIFE" version of the script in the header or footer of your html file/s. Its dependencies must be explicitly referenced first.

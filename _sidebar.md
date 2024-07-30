@@ -4,6 +4,7 @@
 * Getting Started
   * [Installation](installation.md)
   * [Setup](setup.md)
+  * [Server Setup](server.md)
   * [Objects / Componenets](objects.md)
   * [Rendering](rendering.md)
 

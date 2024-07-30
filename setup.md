@@ -12,7 +12,7 @@ On the html page/s you want to include the number plate design functionality, de
 
 ## Instantiate the Plate Class
 
-Inside your own custom javascript file, instantiate the `Plate` class under a variable name of your choosing (a logical variable name is `plate`, or `frontPlate`, or `rearPlate`). In the class constructor, you need to pass the element id of your container. For example:
+Inside your own custom javascript file, instantiate the `Plate` class under a variable name of your choosing (a logical variable name is `plate`, or `frontPlate`, or `rearPlate`). In the class constructor, you need to pass your container's ID selector. For example:
 
 ```javascript
 const plate = new Plate('#number-plate-preview')
@@ -23,6 +23,8 @@ const plate = new Plate('#number-plate-preview')
 ```javascript
 const plate = new Plateit.Plate('#number-plate-preview')
 ```
+
+> Note: if running the application [on a server](server.md), invoke the class *without* an ID selector.
 
 ## Manipulate the Plate
 
