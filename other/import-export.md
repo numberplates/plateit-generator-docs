@@ -4,7 +4,7 @@
 
 ## Objects
 
-It is possible to import and export plate designs using JSON/Javascript objects. This is useful if you want to continue editing a plate at a later time.
+It is possible to import and export plate designs using JSON/JavaScript objects. This is useful if you want to continue editing a plate at a later time.
 
 ### Export Plate
 

@@ -2,7 +2,7 @@
 
 Running the application on a Node server requires an extra step.
 
-At the top of your server-side javascript file, along with the Plate class, you need to import two SVG.JS dependencies which have already been installed for you automatically.
+At the top of your server-side JavaScript file, along with the Plate class, you need to import two SVG.JS dependencies which have already been installed for you automatically.
 
 ```javascript
 import { Plate } from 'plateit-generator'

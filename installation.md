@@ -1,11 +1,15 @@
 # Installation
 
-## ESM Modules
-
-This javascript library does not exist in the NPM registry. It must be installed manually by running the following command, being sure to reference the correct location of the package file on your local machine:
+This JavaScript library does not exist in the official NPM registry. However, it can be installed from Plateit's private registry with a valid access token by executing the following command:
 
 ```bash
-npm install /local/path/to/plateit-generator.tgz
+PLATEIT_PACKAGES_TOKEN=your_token_here npm install https://packages.plateit.co.uk/plateit-generator-1.0.3.tgz
+```
+
+The above command will *fail* without the following line in your project's `.npmrc` file:
+
+```
+//packages.plateit.co.uk/:_authToken=${PLATEIT_PACKAGES_TOKEN}
 ```
 
 Once installed, it can be imported like so:
@@ -20,7 +24,7 @@ For running the application on a server, please refer to [this short guide](serv
 
 ## Direct Link
 
-Alternatively, it can be imported by referencing the "IIFE" version of the script in the header or footer of your html file/s. Its dependencies must be explicitly referenced first.
+Alternatively, it can be imported by referencing the "IIFE" version of the script in the header or footer of your html file/s. Its external dependencies must be explicitly referenced first.
 
 ```html
 <!-- dependencies -->
@@ -28,7 +32,7 @@ Alternatively, it can be imported by referencing the "IIFE" version of the scrip
 <script src="https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.4/opentype.min.js"></script>
 
 <!-- plateit generator -->
-<script src="path/to/plateit-generator.min.iife.js"></script>
+<script src="node_modules/plateit-generator/dist/plateit-generator.min.iife.js"></script>
 ```
 
 You are now ready for the [setup](setup.md).
