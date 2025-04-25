@@ -3,7 +3,7 @@
 This JavaScript library does not exist in the official NPM registry. However, it can be installed from Plateit's private registry with a valid access token by executing the following command:
 
 ```bash
-PLATEIT_PACKAGES_TOKEN=your_token_here npm install https://packages.plateit.co.uk/plateit-generator-1.0.6.tgz
+PLATEIT_PACKAGES_TOKEN=your_token_here npm install https://packages.plateit.co.uk/plateit-generator-2.0.0.tgz
 ```
 
 The above command will *fail* without the following line in your project's `.npmrc` file:
@@ -20,7 +20,7 @@ import { Plate } from 'plateit-generator'
 
 NPM will handle the installation of the dependencies for you.
 
-For running the application on a server, please refer to [this short guide](server.md).
+For running the application on a server, please refer to [this short guide](/server.md).
 
 ## Direct Link
 
@@ -35,4 +35,4 @@ Alternatively, it can be imported by referencing the "IIFE" version of the scrip
 <script src="node_modules/plateit-generator/dist/plateit-generator.min.iife.js"></script>
 ```
 
-You are now ready for the [setup](setup.md).
+You are now ready for the [setup](/setup.md).

@@ -1,6 +1,6 @@
 # Setup
 
->This page assumes you have followed the initial [installation instructions](installation.md).
+>This page assumes you have followed the initial [installation instructions](/installation.md).
 
 ## Create an HTML Container
 
@@ -24,7 +24,7 @@ const plate = new Plate('#number-plate-preview')
 const plate = new Plateit.Plate('#number-plate-preview')
 ```
 
-> Note: if running the application [on a server](server.md), invoke the class *without* an ID selector.
+> Note: if running the application [on a server](/server.md), invoke the class *without* an ID selector.
 
 ## Manipulate the Plate
 
@@ -37,7 +37,7 @@ plate.reg.setText('MY REG')
 // etc... etc...
 ```
 
-You can learn more about this in the [next section](objects.md).
+You can learn more about this in the [next section](/objects.md).
 
 ## External Asset Caching
 

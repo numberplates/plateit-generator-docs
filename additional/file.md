@@ -1,6 +1,6 @@
 # File
 
-This object is responsible for handling import and export functionality. More information can be found on the [import/export](other/import-export.md) page.
+This object is responsible for handling import and export functionality. More information can be found on the [import/export](/other/import-export.md) page.
 
 ## Methods <!-- {docsify-ignore} -->
 
@@ -26,12 +26,24 @@ Returns: `File`
 
 ### exportSvg()
 
-Promises to return the final design as an SVG string. By default it will include all design metadata, this can be turned off by passing `false`. However, doing so will prevent it from being re-imported later. It takes a *boolean*.
+Promises to return the final design as an SVG string. By default it will *not* include design metadata, this can be turned on by passing `true`. (Metadata is required if you want to re-import it later.) It takes a *boolean*.
 
 Returns: `Promise<string>`
 
+### importXml()
+
+Takes an XML string enveloped in a `<plate>` element and sets a fresh representation of the plate. It takes a *string*.
+
+Returns: `File`
+
+### exportXml()
+
+Returns the final design as an XML string enveloped in a `<plate>` element.
+
+Returns: `string`
+
 ### extractMetadataFromSvg()
 
-Takes an SVG string exported from this application and returns its design metadata as an object. It takes a *string*.
+Takes an SVG string exported from this application (with metadata) and returns its design metadata as an object. It takes a *string*.
 
 Returns: `object`

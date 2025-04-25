@@ -4,18 +4,18 @@ The design properties for the background component are as follows:
 
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |
-| **backgroundColour** | string\|array | 'none' | The [colour](other/colour.md) of the background. |
-| **isPreviewOnly** | boolean | true | If true, the background is for preview purposes only and will not be printed. |
+| **backgroundColour** | string\|array | 'none' | The [colour](/other/colour.md) of the background. |
+| **doNotPrint** | boolean | true | If true, the background is for preview purposes only and will not be printed. |
 
 ## Methods <!-- {docsify-ignore} -->
 
 ### setBackgroundColour()
 
-Sets the [colour](other/colour.md) of the preview background. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
+Sets the [colour](/other/colour.md) of the preview background. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
 
 Returns: `Background`
 
-### setIsPreviewOnly()
+### setDoNotPrint()
 
 Dictates whether the background should be for preview purposes only. It is `true` by default and will not be printed. If you wish for the background to be printed, pass `false` to this method. It takes a *boolean*.
 

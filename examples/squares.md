@@ -8,31 +8,36 @@ A collection of square plates created with the Plateit number plate generator an
 
 ```javascript
 // Document
-plate.document.setWidth(279)
-plate.document.setHeight(203)
+plate.document
+  .setWidth(279)
+  .setHeight(203)
 
 // Background
-plate.background.setBackgroundColour('yellow')
-plate.background.utilise(true)
+plate.background
+  .setBackgroundColour('yellow')
+  .utilise(true)
 
 // Reg
-plate.reg.setText(['NG25', 'XYZ'])
-plate.reg.setTextColour('black')
-plate.reg.setTextHeight(79)
-plate.reg.setTextLineGap(19)
-plate.reg.setTextFont('../assets/fonts/CharlesWright-Car.ttf')
-plate.reg.utilise(true)
+plate.reg
+  .setText(['NG25', 'XYZ'])
+  .setTextColour('black')
+  .setTextHeight(79)
+  .setTextLineGap(19)
+  .setTextFont('../assets/fonts/CharlesWright-Car.ttf')
+  .utilise(true)
 
 // Bottom Line
-plate.bottomLine.setText('ACME Number Plates, SW1A 2AA')
-plate.bottomLine.setTextHeight(4)
-plate.bottomLine.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bottomLine.utilise(true)
+plate.bottomLine
+  .setText('ACME Number Plates, SW1A 2AA')
+  .setTextHeight(4)
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .utilise(true)
 
 // Bsau
-plate.bsau.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bsau.setTextHeight(2)
-plate.bsau.utilise(true)
+plate.bsau
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .setTextHeight(2)
+  .utilise(true)
 
 // Render
 plate.render()
@@ -46,44 +51,51 @@ plate.render()
 
 ```javascript
 // Document
-plate.document.setWidth(279)
-plate.document.setHeight(203)
+plate.document
+  .setWidth(279)
+  .setHeight(203)
 
 // Background
-plate.background.setBackgroundColour('yellow')
-plate.background.utilise(true)
+plate.background
+  .setBackgroundColour('yellow')
+  .utilise(true)
 
 // Reg
-plate.reg.setText(['NG25', 'XYZ'])
-plate.reg.setTextColour('black')
-plate.reg.setTextHeight(79)
-plate.reg.setTextLineGap(19)
-plate.reg.setTextFont('../assets/fonts/CharlesWright-Car.ttf')
-plate.reg.utilise(true)
+plate.reg
+  .setText(['NG25', 'XYZ'])
+  .setTextColour('black')
+  .setTextHeight(79)
+  .setTextLineGap(19)
+  .setTextFont('../assets/fonts/CharlesWright-Car.ttf')
+  .utilise(true)
 
 // Bottom Line
-plate.bottomLine.setText('ACME Number Plates, SW1A 2AA')
-plate.bottomLine.setTextHeight(4)
-plate.bottomLine.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bottomLine.utilise(true)
+plate.bottomLine
+  .setText('ACME Number Plates, SW1A 2AA')
+  .setTextHeight(4)
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .utilise(true)
 
 // Bsau
-plate.bsau.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bsau.setTextHeight(2)
-plate.bsau.utilise(true)
+plate.bsau
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .setTextHeight(2)
+  .utilise(true)
 
 // Border
-plate.border.setThickness(2)
-plate.border.setColour('black')
-plate.border.utilise(true)
+plate.border
+  .setThickness(2)
+  .setColour('black')
+  .utilise(true)
 
 // Left Side Badge
-plate.sideBadgeLeft.setWidth(44)
-plate.sideBadgeLeft.setBackgroundColour('blue')
-plate.sideBadgeLeft.setImage('../assets/badges/FlagUnionJack.svg')
-plate.sideBadgeLeft.setText(['UNITED', 'KINGDOM'])
-plate.sideBadgeLeft.setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
-plate.sideBadgeLeft.utilise(true)
+plate.sideBadgeLeft
+  .setWidth(44)
+  .setBackgroundColour('blue')
+  .setImage('../assets/badges/FlagUnionJack.svg')
+  .setText(['UNITED', 'KINGDOM'])
+  .setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
+  .utilise(true)
 
 // Render
 plate.render()
@@ -96,46 +108,53 @@ plate.render()
 
 ```javascript
 // Document
-plate.document.setWidth(279)
-plate.document.setHeight(203)
+plate.document
+  .setWidth(279)
+  .setHeight(203)
 
 // Background
-plate.background.setBackgroundColour('yellow')
-plate.background.utilise(true)
+plate.background
+  .setBackgroundColour('yellow')
+  .utilise(true)
 
 // Reg
-plate.reg.setText(['NG25', 'XYZ'])
-plate.reg.setTextColour('black')
-plate.reg.setTextHeight(79)
-plate.reg.setTextLineGap(19)
-plate.reg.setTextFont('../assets/fonts/CharlesWright-Car.ttf')
-plate.reg.utilise(true)
+plate.reg
+  .setText(['NG25', 'XYZ'])
+  .setTextColour('black')
+  .setTextHeight(79)
+  .setTextLineGap(19)
+  .setTextFont('../assets/fonts/CharlesWright-Car.ttf')
+  .utilise(true)
 
 // Bottom Line
-plate.bottomLine.setText('ACME Number Plates, SW1A 2AA')
-plate.bottomLine.setTextHeight(4)
-plate.bottomLine.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bottomLine.utilise(true)
+plate.bottomLine
+  .setText('ACME Number Plates, SW1A 2AA')
+  .setTextHeight(4)
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .utilise(true)
 
 // Bsau
-plate.bsau.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bsau.setTextHeight(2)
-plate.bsau.utilise(true)
+plate.bsau
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .setTextHeight(2)
+  .utilise(true)
 
 // Border
-plate.border.setThickness(2)
-plate.border.setColour('black')
-plate.border.utilise(true)
+plate.border
+  .setThickness(2)
+  .setColour('black')
+  .utilise(true)
 
 // Left Side Badge
-plate.sideBadgeLeft.setWidth(44)
-plate.sideBadgeLeft.setBackgroundColour('blue')
-plate.sideBadgeLeft.setImage('../assets/badges/FlagUnionJack.svg')
-plate.sideBadgeLeft.setText(['UNITED', 'KINGDOM'])
-plate.sideBadgeLeft.setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
-plate.sideBadgeLeft.setInsideBorder(true)
-plate.sideBadgeLeft.setFloating(true)
-plate.sideBadgeLeft.utilise(true)
+plate.sideBadgeLeft
+  .setWidth(44)
+  .setBackgroundColour('blue')
+  .setImage('../assets/badges/FlagUnionJack.svg')
+  .setText(['UNITED', 'KINGDOM'])
+  .setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
+  .setInsideBorder(true)
+  .setFloating(true)
+  .utilise(true)
 
 // Render
 plate.render()
@@ -148,31 +167,36 @@ plate.render()
 
 ```javascript
 // Document
-plate.document.setWidth(229)
-plate.document.setHeight(178)
+plate.document
+  .setWidth(229)
+  .setHeight(178)
 
 // Background
-plate.background.setBackgroundColour('yellow')
-plate.background.utilise(true)
+plate.background
+  .setBackgroundColour('yellow')
+  .utilise(true)
 
 // Reg
-plate.reg.setText(['NG25', 'XYZ'])
-plate.reg.setTextColour('black')
-plate.reg.setTextHeight(64)
-plate.reg.setTextLineGap(19)
-plate.reg.setTextFont('../assets/fonts/CharlesWright-Motorcycle.ttf')
-plate.reg.utilise(true)
+plate.reg
+  .setText(['NG25', 'XYZ'])
+  .setTextColour('black')
+  .setTextHeight(64)
+  .setTextLineGap(13)
+  .setTextFont('../assets/fonts/CharlesWright-Motorcycle.ttf')
+  .utilise(true)
 
 // Bottom Line
-plate.bottomLine.setText('ACME Number Plates, SW1A 2AA')
-plate.bottomLine.setTextHeight(4)
-plate.bottomLine.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bottomLine.utilise(true)
+plate.bottomLine
+  .setText('ACME Number Plates, SW1A 2AA')
+  .setTextHeight(4)
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .utilise(true)
 
 // Bsau
-plate.bsau.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bsau.setTextHeight(2)
-plate.bsau.utilise(true)
+plate.bsau
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .setTextHeight(2)
+  .utilise(true)
 
 // Render
 plate.render()
@@ -184,47 +208,54 @@ plate.render()
 
 ```javascript
 // Document
-plate.document.setWidth(229)
-plate.document.setHeight(178)
+plate.document
+  .setWidth(229)
+  .setHeight(178)
 
 // Background
-plate.background.setBackgroundColour('yellow')
-plate.background.utilise(true)
+plate.background
+  .setBackgroundColour('yellow')
+  .utilise(true)
 
 // Reg
-plate.reg.setText(['NG25', 'XYZ'])
-plate.reg.setTextColour('black')
-plate.reg.setTextHeight(64)
-plate.reg.setTextLineGap(19)
-plate.reg.setTextFont('../assets/fonts/CharlesWright-Motorcycle.ttf')
-plate.reg.utilise(true)
+plate.reg
+  .setText(['NG25', 'XYZ'])
+  .setTextColour('black')
+  .setTextHeight(64)
+  .setTextLineGap(13)
+  .setTextFont('../assets/fonts/CharlesWright-Motorcycle.ttf')
+  .utilise(true)
 
 // Bottom Line
-plate.bottomLine.setText('ACME Number Plates, SW1A 2AA')
-plate.bottomLine.setTextHeight(4)
-plate.bottomLine.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bottomLine.utilise(true)
+plate.bottomLine
+  .setText('ACME Number Plates, SW1A 2AA')
+  .setTextHeight(4)
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .utilise(true)
 
 // Bsau
-plate.bsau.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bsau.setTextHeight(2)
-plate.bsau.utilise(true)
+plate.bsau
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .setTextHeight(2)
+  .utilise(true)
 
 // Border
-plate.border.setThickness(2)
-plate.border.setInnerMargin(3)
-plate.border.setColour('black')
-plate.border.utilise(true)
+plate.border
+  .setThickness(2)
+  .setInnerMargin(3)
+  .setColour('black')
+  .utilise(true)
 
 // Left Side Badge
-plate.sideBadgeLeft.setWidth(30)
-plate.sideBadgeLeft.setBackgroundColour('blue')
-plate.sideBadgeLeft.setImage('../assets/badges/FlagUnionJack.svg')
-plate.sideBadgeLeft.setText(['UNITED', 'KINGDOM'])
-plate.sideBadgeLeft.setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
-plate.sideBadgeLeft.setInsideBorder(true)
-plate.sideBadgeLeft.setFloating(true)
-plate.sideBadgeLeft.utilise(true)
+plate.sideBadgeLeft
+  .setWidth(30)
+  .setBackgroundColour('blue')
+  .setImage('../assets/badges/FlagUnionJack.svg')
+  .setText(['UNITED', 'KINGDOM'])
+  .setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
+  .setInsideBorder(true)
+  .setFloating(true)
+  .utilise(true)
 
 // Render
 plate.render()
@@ -237,59 +268,67 @@ plate.render()
 
 ```javascript
 // Document
-plate.document.setWidth(279)
-plate.document.setHeight(203)
+plate.document
+  .setWidth(279)
+  .setHeight(203)
 
 // Background
-plate.background.setBackgroundColour('yellow')
-plate.background.utilise(true)
+plate.background
+  .setBackgroundColour('yellow')
+  .utilise(true)
 
 // Reg
-plate.reg.setText(['NG25', 'XYZ'])
-plate.reg.setTextColour(['red', 'black', 'r'])
-plate.reg.setTextHeight(79)
-plate.reg.setTextLineGap(19)
-plate.reg.setTextFont('../assets/fonts/Bangers-Regular.ttf')
-plate.reg.utilise(true)
+plate.reg
+  .setText(['NG25', 'XYZ'])
+  .setTextColour(['red', 'black', 'r'])
+  .setTextHeight(79)
+  .setTextLineGap(19)
+  .setTextFont('../assets/fonts/Bangers-Regular.ttf')
+  .utilise(true)
 
 // Bottom Line
-plate.bottomLine.setText('ACME Number Plates, SW1A 2AA')
-plate.bottomLine.setTextHeight(4)
-plate.bottomLine.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bottomLine.utilise(true)
+plate.bottomLine
+  .setText('ACME Number Plates, SW1A 2AA')
+  .setTextHeight(4)
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .utilise(true)
 
 // Bsau
-plate.bsau.setTextFont('../assets/fonts/OpenSans-Regular.ttf')
-plate.bsau.setTextHeight(2)
-plate.bsau.utilise(true)
+plate.bsau
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .setTextHeight(2)
+  .utilise(true)
 
 // Border
-plate.border.setThickness(2)
-plate.border.setColour(['black', 'red', 'blue'])
-plate.border.utilise(true)
+plate.border
+  .setThickness(2)
+  .setColour(['black', 'red', 'blue'])
+  .utilise(true)
 
 // Left Side Badge
-plate.sideBadgeLeft.setWidth(44)
-plate.sideBadgeLeft.setBackgroundColour(['blue', 'green', 'y'])
-plate.sideBadgeLeft.setImage('../assets/badges/FlagUnionJackPortrait.svg')
-plate.sideBadgeLeft.setText(['UNITED', 'KINGDOM'])
-plate.sideBadgeLeft.setTextColour('black')
-plate.sideBadgeLeft.setTextCutOut(true)
-plate.sideBadgeLeft.setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
-plate.sideBadgeLeft.utilise(true)
+plate.sideBadgeLeft
+  .setWidth(44)
+  .setBackgroundColour(['blue', 'green', 'y'])
+  .setImage('../assets/badges/FlagUnionJackPortrait.svg')
+  .setText(['UNITED', 'KINGDOM'])
+  .setTextColour('black')
+  .setTextCutOut(true)
+  .setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
+  .utilise(true)
 
 // Right Side Badge
-plate.sideBadgeRight.setWidth(44)
-plate.sideBadgeRight.setBackgroundColour(['blue', 'black', 'y'])
-plate.sideBadgeRight.setImage('../assets/badges/FlagUnionJack.svg')
-plate.sideBadgeRight.setText('UK')
-plate.sideBadgeRight.setTextColour('pink')
-plate.sideBadgeRight.setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
-plate.sideBadgeRight.setInsideBorder(true)
-plate.sideBadgeRight.setFloating(true)
-plate.sideBadgeRight.utilise(true)
+plate.sideBadgeRight
+  .setWidth(44)
+  .setBackgroundColour(['blue', 'black', 'y'])
+  .setImage('../assets/badges/FlagUnionJack.svg')
+  .setText('UK')
+  .setTextColour('pink')
+  .setTextFont('../assets/fonts/OpenSans-ExtraBold.ttf')
+  .setInsideBorder(true)
+  .setFloating(true)
+  .utilise(true)
 
 // Render
 plate.render()
 ```
-[Example Oblong Plates](examples/oblongs.md)
+[Example Oblong Plates](/examples/oblongs.md)

@@ -5,10 +5,10 @@ The design properties for the border component are as follows:
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |
 | **thickness** | number | 0 | The thickness of the border in mm. |
-| **colour** | string\|array | 'black' | The border [colour](other/colour.md). |
+| **colour** | string\|array | 'black' | The border [colour](/other/colour.md). |
 | **radius** | number | 3 | The radius of border's corners. |
 | **innerMargin** | number | 5 | The minimum gap between border and inner plater content. |
-| **innerColour** | string\|array\|null | undefined | The inner fill [colour](other/colour.md) typically used for [metal plates](/examples/oblongs.md#metal-oblong). |
+| **innerColour** | string\|array\|null | null | The inner fill [colour](/other/colour.md) typically used for [metal plates](/examples/oblongs.md#metal-oblong). |
 
 ## Methods <!-- {docsify-ignore} -->
 
@@ -20,7 +20,7 @@ Returns: `Border`
 
 ### setColour()
 
-Sets the border [colour](other/colour.md). It takes a *string* for a solid colour, or an *array* of strings for a gradient.
+Sets the border [colour](/other/colour.md). It takes a *string* for a solid colour, or an *array* of strings for a gradient.
 
 Returns: `Border`
 
@@ -38,7 +38,7 @@ Returns: `Border`
 
 ### setInnerColour()
 
-Optionally sets the border's inner [colour](other/colour.md). It takes a *string* for a solid colour, or an *array* of strings for a gradient.
+Optionally sets the border's inner [colour](/other/colour.md). It takes a *string* for a solid colour, or an *array* of strings for a gradient.
 
 **Note:** Usually a number plate's border is a rectangular element with a stroke and no fill. However, this method allows you to fill it if you want to. It is useful when representing a [metal plate](/examples/oblongs.md#metal-oblong).
 
@@ -46,7 +46,7 @@ Returns: `Border`
 
 ### render()
 
-Renders the Border component only. All other components will be left un-rendered. It's recommended to use the [plate.render()](rendering) method instead after sizing changes have been made to the Border properties.
+Renders the Border component only. All other components will be left un-rendered. It's recommended to use the [plate.render()](/rendering) method instead after sizing changes have been made to the Border properties.
 
 Returns: `Promise`
 

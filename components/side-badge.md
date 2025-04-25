@@ -9,11 +9,11 @@ The design properties for the side badge component are as follows:
 | **radius** | number | 3 | The radius of the badge's corners. |
 | **isInsideBorder** | boolean | false | Positions the badge inside the border. |
 | **isFloating** | boolean | false | For legal, multi-line plates (see below). |
-| **imageUrl** | string | undefined | The path or url to the image file. |
+| **imageUrl** | string | null | The path or url to the image file. |
 | **text** | string\|array | '' | The side badge text. |
 | **textFontUrl** | string | '' | The path or url to the font file. |
-| **textColour** | string\|array | 'white' | The [colour](other/colour.md) of the text. |
-| **textIsCutOut** | boolean | undefined | Cuts out the text from the background.  |
+| **textColour** | string\|array | 'white' | The [colour](/other/colour.md) of the text. |
+| **textIsCutOut** | boolean | null | Cuts out the text from the background.  |
 
 ## Methods <!-- {docsify-ignore} -->
 
@@ -25,7 +25,7 @@ Returns: `SideBadge`
 
 ### setBackgroundColour()
 
-Sets the [colour](other/colour.md) of the background. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
+Sets the [colour](/other/colour.md) of the background. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
 
 Returns: `SideBadge`
 

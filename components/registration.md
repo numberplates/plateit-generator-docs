@@ -8,8 +8,8 @@ The design properties for the registration component are as follows:
 | **textFontUrl** | string | '' | The path or url to the font file. |
 | **textLineHeight** | number | 79 | The height in mm of the text. |
 | **textLineGap** | number | 19 | For multi-line plates, this is the gap in mm between each line. |
-| **textColour** | string\|array | 'black' | The [colour](other/colour.md) of the text. |
-| **textIsCutOut** | boolean | undefined | [See metal plates](/examples/oblongs.md#metal-oblong).  |
+| **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
+| **textIsCutOut** | boolean | null | [See metal plates](/examples/oblongs.md#metal-oblong).  |
 
 ## Methods <!-- {docsify-ignore} -->
 
@@ -39,7 +39,7 @@ Returns: `Registration`
 
 ### setTextColour()
 
-Sets the [colour](other/colour.md) of the registration. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
+Sets the [colour](/other/colour.md) of the registration. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
 
 Returns: `Registration`
 
@@ -55,7 +55,7 @@ Renders the registration component only.
 
 Returns: `Promise`
 
-**Note:** The registration is the only component that, when modified, won't interfere with any other component (except for **some** scenarios - [see here](../rendering.md#registration)). For this reason, if you want your application's preview image to refresh upon every key stroke, for increased performance speed, call the targetted `plate.reg.render()` method instead of the generic `plate.render()` method. This will result in quicker render speeds because *only* the reg is being redrawn, instead of the entire plate.
+**Note:** The registration is the only component that, when modified, won't interfere with any other component (except for **some** scenarios - [see here](/rendering.md#registration)). For this reason, if you want your application's preview image to refresh upon every key stroke, for increased performance speed, call the targetted `plate.reg.render()` method instead of the generic `plate.render()` method. This will result in quicker render speeds because *only* the reg is being redrawn, instead of the entire plate.
 
 ### hasResized()
 

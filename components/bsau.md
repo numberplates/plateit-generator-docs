@@ -7,7 +7,7 @@ The design properties for the bsau component are as follows:
 | **text** | string\|array | 'BSAU 145E' | The bsau text. |
 | **textFontUrl** | string | '' | The path or url to the font file. |
 | **textLineHeight** | number | 2 | The height in mm of the text. |
-| **textColour** | string\|array | 'black' | The [colour](other/colour.md) of the text. |
+| **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
 
 ## Methods <!-- {docsify-ignore} -->
 
@@ -31,7 +31,7 @@ Returns: `Bsau`
 
 ### setTextColour()
 
-Sets the [colour](other/colour.md) of the text. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
+Sets the [colour](/other/colour.md) of the text. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
 
 Returns: `Bsau`
 

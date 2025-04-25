@@ -30,7 +30,7 @@ Returns: `Document`
 
 ### render()
 
-Renders the Document (plate size) component only. All other components will be left un-rendered. It's recommended to use the [plate.render()](rendering) method instead after changes have been made to the Document properties.
+Renders the Document (plate size) component only. All other components will be left un-rendered. It's recommended to use the [plate.render()](/rendering.md) method instead after changes have been made to the Document properties.
 
 Returns: `Promise`
 

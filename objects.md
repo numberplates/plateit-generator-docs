@@ -2,7 +2,7 @@
 
 ## The Plate Object
 
-Let's say you have followed the [installation](installation.md) and [setup](setup.md) instructions.
+Let's say you have followed the [installation](/installation.md) and [setup](/setup.md) instructions.
 
 You now have a Plate object under a variable named `plate`.
 
@@ -14,22 +14,22 @@ You can access the plate's design components by referencing the following keys:
 
 | Key | Returns | Info |
 | --- | --- | --- |
-| `plate.document` | [Document](components/document.md) | Responsble for setting the document (plate) size. |
-| `plate.background` | [Background](components/background.md) | Responsble for setting the preview background colour. |
-| `plate.border` | [Border](components/border.md) | Responsble for manipulating the border. |
-| `plate.reg` | [Registration](components/registration.md) | Responsble for manipulating the registration. |
-| `plate.regOverlay` | [Registration](components/registration.md) | Responsble for manipulating the overlay registration ([read more here](#)). |
-| `plate.sideBadgeLeft` | [SideBadge](components/side-badge.md) | Responsble for manipulating the left side badge. |
-| `plate.sideBadgeRight` | [SideBadge](components/side-badge.md) | Responsble for manipulating the right side badge. |
-| `plate.bottomLine` | [BottomLine](components/bottom-line.md) | Responsble for manipulating the bottom line. |
-| `plate.bsau` | [Bsau](components/bsau.md) | Responsble for manipulating the british standard mark. |
+| `plate.document` | [Document](/components/document.md) | Responsble for setting the document (plate) size. |
+| `plate.background` | [Background](/components/background.md) | Responsble for setting the preview background colour. |
+| `plate.border` | [Border](/components/border.md) | Responsble for manipulating the border. |
+| `plate.reg` | [Registration](/components/registration.md) | Responsble for manipulating the registration. |
+| `plate.regOverlays` | [RegistrationOverlays](/additional/registration-overlays.md) | Responsble for manipulating the registrtion overlay layers. |
+| `plate.sideBadgeLeft` | [SideBadge](/components/side-badge.md) | Responsble for manipulating the left side badge. |
+| `plate.sideBadgeRight` | [SideBadge](/components/side-badge.md) | Responsble for manipulating the right side badge. |
+| `plate.bottomLine` | [BottomLine](/components/bottom-line.md) | Responsble for manipulating the bottom line. |
+| `plate.bsau` | [Bsau](/components/bsau.md) | Responsble for manipulating the british standard mark. |
 
 ## Additional Objects
 
 | Key | Returns | Info |
 | --- | --- | --- |
-| `plate.metadata` | [Meta](additional/meta.md) | Optionally add custom metadata. |
-| `plate.file` | [File](additional/file.md) | Methods related to importing and exporting are contained here. |
+| `plate.metadata` | [Meta](/additional/meta.md) | Optionally add custom metadata. |
+| `plate.file` | [File](/additional/file.md) | Methods related to importing and exporting are contained here. |
 
 ## Important Note
 

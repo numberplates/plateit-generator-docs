@@ -1,6 +1,6 @@
 # Rendering
 
-The main Plate object has a `render()` method, and so does each of its [components](objects.md).
+The main Plate object has a `render()` method, and so does each of its [components](/objects.md).
 
 It's important to understand the difference to help optimise for speed.
 
@@ -16,9 +16,9 @@ This is because spacial changes to one component will often have a knock-on effe
 
 ## Registration
 
-The registration has no knock-on effects to other components providing that there is no [reg overlay](examples/oblongs.md#standard-oblong-3d-effect) present and there is not a "[floating](components/side-badge.md#setfloating)" side badge.
+The registration has no knock-on effects to other components providing that there are no [reg overlays](/examples/oblongs.md#standard-oblong-3d-effect) present and there is not a "[floating](/components/side-badge.md#setfloating)" side badge.
 
-In these instances, if you wish for the design to re-render on every keystroke of the registration, opt for calling the `plate.reg.render()` method instead to get a slight speed advantage. For example:
+In these instances, if you wish for the design to re-render on every keystroke of the registration, opt for calling the `plate.reg.render()` method instead to prevent having to redraw every element. For example:
 
 ```javascript
 function onRegKeyPress(plate, reg) {
@@ -28,7 +28,7 @@ function onRegKeyPress(plate, reg) {
     if(
         plate.sideBadgeLeft.isUtilised() && plate.sideBadgeLeft.isFloating() ||
         plate.sideBadgeRight.isUtilised() && plate.sideBadgeRight.isFloating() ||
-        plate.regOverlay.isUtilised()
+        plate.regOverlays.isUtilised()
     ) {
         // There may be knock-on effects to other components, redraw entire plate
         return plate.render()
