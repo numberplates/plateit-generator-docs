@@ -35,12 +35,6 @@ Sets the [colour](/other/colour.md) of the text. It takes a *string* for a solid
 
 Returns: `Bsau`
 
-### render()
-
-Renders the bsau component only.
-
-Returns: `Promise`
-
 ### utilise()
 
 Toggle the bsau component on or off. It takes a *boolean*.

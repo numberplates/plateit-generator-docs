@@ -18,7 +18,6 @@ You can access the plate's design components by referencing the following keys:
 | `plate.background` | [Background](/components/background.md) | Responsble for setting the preview background colour. |
 | `plate.border` | [Border](/components/border.md) | Responsble for manipulating the border. |
 | `plate.reg` | [Registration](/components/registration.md) | Responsble for manipulating the registration. |
-| `plate.regOverlays` | [RegistrationOverlays](/additional/registration-overlays.md) | Responsble for manipulating the registrtion overlay layers. |
 | `plate.sideBadgeLeft` | [SideBadge](/components/side-badge.md) | Responsble for manipulating the left side badge. |
 | `plate.sideBadgeRight` | [SideBadge](/components/side-badge.md) | Responsble for manipulating the right side badge. |
 | `plate.bottomLine` | [BottomLine](/components/bottom-line.md) | Responsble for manipulating the bottom line. |
@@ -28,6 +27,7 @@ You can access the plate's design components by referencing the following keys:
 
 | Key | Returns | Info |
 | --- | --- | --- |
+| `plate.regOverlays` | [RegistrationOverlayStore](/additional/registration-overlay-store.md) | Responsble for manipulating the registration overlay layers. |
 | `plate.metadata` | [Meta](/additional/meta.md) | Optionally add custom metadata. |
 | `plate.file` | [File](/additional/file.md) | Methods related to importing and exporting are contained here. |
 

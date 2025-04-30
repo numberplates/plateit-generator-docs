@@ -41,10 +41,12 @@ You can learn more about this in the [next section](/objects.md).
 
 ## External Asset Caching
 
-For front-end applications, typically there will be more than one Plate instantiated at a time to render both a front and rear plate simultaneously. To help with asset caching (and to avoid having to fetch the same asset twice), you can instantiate the Plate class with an optional asset helper like so:
+For front-end applications, typically there will be more than one Plate instantiated at a time to render both a front and rear plate simultaneously. To avoid needing to fetch the same asset twice, you can instantiate the Plate class with an optional asset caching helper like so:
 
 ```javascript
-const assetsFetched = new AssetsFetched()
-const plateFront = new Plate('#front-plate-preview', assetsFetched)
-const rearFront = new Plate('#rear-plate-preview', assetsFetched)
+import { Plate, AssetStore } from 'plateit-generator'
+
+const assetStore = new AssetStore()
+const plateFront = new Plate('#front-plate-preview', assetStore)
+const plateRear  = new Plate('#rear-plate-preview', assetStore)
 ```

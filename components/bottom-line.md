@@ -42,12 +42,6 @@ Force-aligns the central placement of the bottom line with the central placement
 
 Returns: `BottomLine`
 
-### render()
-
-Renders the bottom line component only.
-
-Returns: `Promise`
-
 ### utilise()
 
 Toggle the bottom line component on or off. It takes a *boolean*.

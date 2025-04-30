@@ -18,7 +18,7 @@
   * [Bsau](/components/bsau.md)
 
 * Additonal Objects
-  * [RegistrationOverlays](/additional/registration-overlays.md)
+  * [RegistrationOverlayStore](/additional/registration-overlay-store.md)
   * [Meta](/additional/meta.md)
   * [File](/additional/file.md)
 

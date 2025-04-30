@@ -44,12 +44,6 @@ Optionally sets the border's inner [colour](/other/colour.md). It takes a *strin
 
 Returns: `Border`
 
-### render()
-
-Renders the Border component only. All other components will be left un-rendered. It's recommended to use the [plate.render()](/rendering) method instead after sizing changes have been made to the Border properties.
-
-Returns: `Promise`
-
 ### utilise()
 
 Toggle the Border component on or off. It takes a *boolean*.

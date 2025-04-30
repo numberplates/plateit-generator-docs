@@ -28,12 +28,6 @@ Sets the margin (spacing round the outside) in mm. It takes a *number*.
 
 Returns: `Document`
 
-### render()
-
-Renders the Document (plate size) component only. All other components will be left un-rendered. It's recommended to use the [plate.render()](/rendering.md) method instead after changes have been made to the Document properties.
-
-Returns: `Promise`
-
 ### reset()
 
 Resets the Document properties to the defaults.

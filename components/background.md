@@ -35,12 +35,6 @@ Use to check if the Background component is being utilised or not.
 
 Returns: `boolean`
 
-### render()
-
-Renders the Background component only.
-
-Returns: `Promise`
-
 ### reset()
 
 Resets the Background properties to the defaults.

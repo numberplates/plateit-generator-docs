@@ -10,6 +10,8 @@ The design properties for the registration component are as follows:
 | **textLineGap** | number | 19 | For multi-line plates, this is the gap in mm between each line. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
 | **textIsCutOut** | boolean | null | [See metal plates](/examples/oblongs.md#metal-oblong).  |
+| **textOffset** | array | null | X and Y text offset in mm. |
+| **doNotPrint** | boolean | null | If true, it will be for preview purposes only and will not be printed. |
 
 ## Methods <!-- {docsify-ignore} -->
 
@@ -49,19 +51,17 @@ Instructs the text to be cut out of the background. It takes a *boolean*. The te
 
 Returns: `Registration`
 
-### render()
+### setTextOffset()
 
-Renders the registration component only.
+Instructs the offset of text from its default position. It takes an *array* of numbers. The first item is the X offset in mm and the second is the Y offset in mm. For example `[3,5]`. It may be useful when using [registration overlays](/additional/registration-overlay-store.md) to create the impression of 3D text. [See this example](/examples/oblongs.md#standard-oblong-4d-stacked).
 
-Returns: `Promise`
+Returns: `Registration`
 
-**Note:** The registration is the only component that, when modified, won't interfere with any other component (except for **some** scenarios - [see here](/rendering.md#registration)). For this reason, if you want your application's preview image to refresh upon every key stroke, for increased performance speed, call the targetted `plate.reg.render()` method instead of the generic `plate.render()` method. This will result in quicker render speeds because *only* the reg is being redrawn, instead of the entire plate.
+### setDoNotPrint()
 
-### hasResized()
+Dictates whether the registration should be for preview purposes only. It takes a *boolean*. It may be useful when using [registration overlays](/additional/registration-overlay-store.md) to create the impression of 3D text. [See this example](/examples/oblongs.md#standard-oblong-4d-stacked).
 
-If the total width or height of the registration exceeds its boundary, the registration will shrink to fit. **This will render the plate illegal for road use**. You can check if the registration has shrunk by calling this method after the render Promise has been fulfilled.
-
-Returns: `boolean`
+Returns: `Registration`
 
 ### utilise()
 

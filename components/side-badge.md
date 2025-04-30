@@ -91,12 +91,6 @@ Instructs the text to be cut out of the background. It takes a *boolean*. The te
 
 Returns: `SideBadge`
 
-### render()
-
-Renders the side badge component only.
-
-Returns: `Promise`
-
 ### utilise()
 
 Toggle the side badge component on or off. It takes a *boolean*.

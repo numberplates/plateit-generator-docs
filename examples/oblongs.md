@@ -143,7 +143,7 @@ plate.sideBadgeLeft
 plate.render()
 ```
 
-## Standard Oblong "4D"
+## Standard Oblong 4D
 
 ![Oblong plate preview](images/standard-car-oblong-4d.svg)
 
@@ -186,14 +186,14 @@ plate.render().then(() => {
   // 3D/4D Letters are pre-cut to a specific size and stuck on.
   // If the reg has been shrunk to fit, it won't work.
   
-  if(plate.reg.hasResized()) {
+  if(plate.hasRegResized()) {
     alert('The reg is too long to accomodate 3D/4D letters')
   }
 
 })
 ```
 
-## Standard Oblong "4D" Stacked
+## Standard Oblong 4D Stacked
 
 ![Oblong plate preview](images/standard-car-oblong-4d-stacked.svg)
 
@@ -248,7 +248,7 @@ plate.render().then(() => {
   // 3D/4D Letters are pre-cut to a specific size and stuck on.
   // If the reg has been shrunk to fit, it won't work.
   
-  if(plate.reg.hasResized()) {
+  if(plate.hasRegResized()) {
     alert('The reg is too long to accomodate 3D/4D letters')
   }
 
