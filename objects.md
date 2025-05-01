@@ -33,18 +33,34 @@ You can access the plate's design components by referencing the following keys:
 
 ## Important Note
 
-!>The properties of each object are **not** designed to be altered directly.
+!>The properties of each component object are **not** designed to be altered directly.
 
 For example, don't do this:
 
 ```javascript
-plate.componentName.exampleProperty = 'foo'
+plate.reg._utilisedProperties.text = 'MY REG'
 ```
 
 Use the object's intended public method, like this:
 
 ```javascript
-plate.componentName.setExampleProperty('foo')
+plate.reg.setText('MY REG')
 ```
 
 The public methods for each component are listed in their respective documentation pages.
+
+## Rendering
+
+To render the plate, call the `render()` method inside the main Plate object. It returns a Promise. If you want to execute some code only after a successful render, you'll need to wait until the Promise has been fulfilled.
+
+For example (note the `await` keyword):
+
+```javascript
+await plate.render()
+
+const wasRegShrunk = plate.hasRegResized()
+
+if(wasRegShrunk) {
+  alert('The reg was shrunk to fit and therefore is no longer legal!')
+}
+```

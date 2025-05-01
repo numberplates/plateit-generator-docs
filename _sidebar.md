@@ -6,7 +6,6 @@
   * [Setup](/setup.md)
   * [Server Setup](/server.md)
   * [Objects / Componenets](/objects.md)
-  * [Rendering](/rendering.md)
 
 * Component Objects
   * [Document](/components/document.md)

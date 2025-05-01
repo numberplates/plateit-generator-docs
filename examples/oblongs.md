@@ -197,7 +197,7 @@ plate.render().then(() => {
 
 ![Oblong plate preview](images/standard-car-oblong-4d-stacked.svg)
 
-> The raised effect is being created by stacking multiple registration layers. Unlike the previous 4D font example, this version doesn't require a separate preview file because the lighter-opacity reg has been set to `doNotPrint`.
+> The raised effect is being created by stacking multiple [registration layers](/additional/registration-overlay-store.md). Unlike the previous "4D" font example, this version doesn't require a separate preview file because the lighter-opacity reg has been set to `doNotPrint`.
 
 ```javascript
 // Document
@@ -217,7 +217,7 @@ plate.reg
   .setTextFont('../assets/fonts/CharlesWright-Car.ttf')
   .setTextOffset(-3, 0)
   .setTextColour('black@0.6')
-  .setDoNotPrint(true)
+  .setDoNotPrint(true) // <-- Tells Plateit to ignore this layer when printing.
   .utilise(true)
 
 // Reg Overlay (this layer *will* be printed)

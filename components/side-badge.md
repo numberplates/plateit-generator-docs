@@ -8,7 +8,7 @@ The design properties for the side badge component are as follows:
 | **innerMargin** | number | 3 | The gap between the inside of the badge and the content. |
 | **radius** | number | 3 | The radius of the badge's corners. |
 | **isInsideBorder** | boolean | false | Positions the badge inside the border. |
-| **isFloating** | boolean | false | For legal, multi-line plates (see below). |
+| **isFloating** | boolean | false | For legal, multi-line plates ([see below](#setfloating)). |
 | **imageUrl** | string | null | The path or url to the image file. |
 | **text** | string\|array | '' | The side badge text. |
 | **textFontUrl** | string | '' | The path or url to the font file. |
