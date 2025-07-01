@@ -7,6 +7,7 @@ The design properties for the side badge component are as follows:
 | **width** | number | 45 | The side badge width. |
 | **innerMargin** | number | 3 | The gap between the inside of the badge and the content. |
 | **radius** | number | 3 | The radius of the badge's corners. |
+| **backgroundColour** | string\|array | 'blue' | The badge's background [colour](/other/colour.md). |
 | **isInsideBorder** | boolean | false | Positions the badge inside the border. |
 | **isFloating** | boolean | false | For legal, multi-line plates ([see below](#setfloating)). |
 | **imageUrl** | string | null | The path or url to the image file. |
