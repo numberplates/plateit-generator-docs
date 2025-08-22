@@ -24,7 +24,9 @@
 * Examples
   * [Oblongs](/examples/oblongs.md)
   * [Squares](/examples/squares.md)
+  * [Shaped](/examples/shaped.md)
 
 * Other
   * [Import / Export](/other/import-export.md)
   * [Colour](/other/colour.md)
+  * [Shaped Plates](/other/shaped-plates.md)

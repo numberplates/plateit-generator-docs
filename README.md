@@ -1,8 +1,10 @@
 # Plateit Generator
 
-> Version: 2.0.2
+> Version: 2.1.0
 
-Plateit Generator is a JavaScript library that renders on-the-fly images of UK number plates. **It handles image generation only**. The final plate design is intended to be sent to the Plateit server-side API. However, this is beyond the scope of this documentation.
+Plateit Generator is a JavaScript library that renders on-the-fly images of UK number plates. 
+
+The final plate design is intended to be sent to the Plateit server-side API. However, it can also be used independently.
 
 !> For Plateit's (separate) server-side order processing API documentation, [click here](https://numberplates.github.io/plateit-api-docs).
 
@@ -12,6 +14,7 @@ Plenty of examples (including code) can be found on the following pages:
 
 * [Example Oblong Plates](/examples/oblongs.md)
 * [Example Square Plates](/examples/squares.md)
+* [Example Shaped Plates](/examples/shaped.md)
 
 ## Requirements
 

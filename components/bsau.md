@@ -9,6 +9,8 @@ The design properties for the bsau component are as follows:
 | **textLineHeight** | number | 2 | The height in mm of the text. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
 
+!> The Bsau component has no effect on shaped plates. Use the `bottomLineExtra` controller instead. [See here](/examples/shaped.md) for examples.
+
 ## Methods <!-- {docsify-ignore} -->
 
 ### setText()

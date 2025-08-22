@@ -38,9 +38,11 @@ Returns: `BottomLine`
 
 ### setAlignToCentreReg()
 
-Force-aligns the central placement of the bottom line with the central placement of the registration for when the registration has been positioned off-centre to account for the presence of a side badge. This is not the default behaviour in some scenarios but may be desired for certain situations. It takes a *boolean*.
+Force-aligns the central placement of the bottom line with the central placement of the registration for when the registration has been positioned off-centre to account for the presence of a (non-floating) side badge. This is not the default behaviour but may be desired for certain situations. It takes a *boolean*.
 
 Returns: `BottomLine`
+
+> Note: If you are utilising an extra bottom line, this will affect both.
 
 ### utilise()
 

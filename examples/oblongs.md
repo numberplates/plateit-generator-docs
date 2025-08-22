@@ -339,4 +339,3 @@ plate.border
 // Render
 plate.render()
 ```
-[Example Square Plates](/examples/squares.md)

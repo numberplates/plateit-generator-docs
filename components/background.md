@@ -5,6 +5,7 @@ The design properties for the background component are as follows:
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |
 | **backgroundColour** | string\|array | 'none' | The [colour](/other/colour.md) of the background. |
+| **shapeUrl** | string\|null | null | The path or url to a [shape template](/other/shaped-plates.md). |
 | **doNotPrint** | boolean | true | If true, the background is for preview purposes only and will not be printed. |
 
 ## Methods <!-- {docsify-ignore} -->
@@ -12,6 +13,12 @@ The design properties for the background component are as follows:
 ### setBackgroundColour()
 
 Sets the [colour](/other/colour.md) of the preview background. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
+
+Returns: `Background`
+
+### setShape()
+
+Sets the [shape template](/other/shaped-plates.md) for a shaped plate. It takes a *string* consisting of a relative path to the template file, or a fully formed URL. If you want to remove an existing shape, pass *null*.
 
 Returns: `Background`
 

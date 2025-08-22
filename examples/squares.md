@@ -331,4 +331,3 @@ plate.sideBadgeRight
 // Render
 plate.render()
 ```
-[Example Oblong Plates](/examples/oblongs.md)
