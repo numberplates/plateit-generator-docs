@@ -1,6 +1,6 @@
 # Meta
 
-When an SVG is [exported](/other/import-export.md) from this application, it will include XML metadata of **all design properties**. Additional, non-design metadata can be added using the methods outlined on this page and will be found further nested under the `<meta>` key.
+When the final design object is [exported](/other/import-export.md) from this application, it can optionally include additional metadata. This can be useful for preserving intent so a front-end editor can, for example, rehydrate form element selections.
 
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |

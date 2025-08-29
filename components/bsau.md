@@ -8,6 +8,7 @@ The design properties for the bsau component are as follows:
 | **textFontUrl** | string | '' | The path or url to the font file. |
 | **textLineHeight** | number | 2 | The height in mm of the text. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
+| **isInBorder** | boolean | false | Embeds the bsau into the border if true |
 
 !> The Bsau component has no effect on shaped plates. Use the `bottomLineExtra` controller instead. [See here](/examples/shaped.md) for examples.
 
@@ -34,6 +35,12 @@ Returns: `Bsau`
 ### setTextColour()
 
 Sets the [colour](/other/colour.md) of the text. It takes a *string* for a solid colour, or an *array* of strings for a gradient.
+
+Returns: `Bsau`
+
+### setInBorder()
+
+The bsau can be embedded in the border. It takes a *boolean*.
 
 Returns: `Bsau`
 

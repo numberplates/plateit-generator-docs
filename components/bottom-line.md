@@ -8,7 +8,7 @@ The design properties for the bottom line component are as follows:
 | **textFontUrl** | string | '' | The path or url to the font file. |
 | **textLineHeight** | number | 4 | The height in mm of the text. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
-| **alignToCentreReg** | boolean\|null | null | Optionally overrides default positioning for some edge cases ([see here](#setAlignToCentreReg))  |
+| **alignToCentreReg** | boolean | null | Optionally overrides default positioning for some edge cases ([see here](#setAlignToCentreReg))  |
 
 ## Methods <!-- {docsify-ignore} -->
 
@@ -41,8 +41,6 @@ Returns: `BottomLine`
 Force-aligns the central placement of the bottom line with the central placement of the registration for when the registration has been positioned off-centre to account for the presence of a (non-floating) side badge. This is not the default behaviour but may be desired for certain situations. It takes a *boolean*.
 
 Returns: `BottomLine`
-
-> Note: If you are utilising an extra bottom line, this will affect both.
 
 ### utilise()
 

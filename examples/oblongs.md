@@ -143,6 +143,54 @@ plate.sideBadgeLeft
 plate.render()
 ```
 
+## Standard Oblong With BSAU in Border
+
+![Oblong plate preview](images/standard-car-oblong-with-bsau-in-border.svg)
+
+> By default, if a border is present, the bsau will sit above it in the bottom-right corner of the plate. It can optionally be embedded into the border itself.
+
+```javascript
+// Document
+plate.document
+  .setWidth(520)
+  .setHeight(111)
+
+// Background
+plate.background
+  .setBackgroundColour('yellow')
+  .utilise(true)
+
+// Reg
+plate.reg
+  .setText('NG25 XYZ')
+  .setTextHeight(79)
+  .setTextFont('../assets/fonts/CharlesWright-Car.ttf')
+  .utilise(true)
+
+// Bottom Line
+plate.bottomLine
+  .setText('ACME Number Plates, SW1A 2AA')
+  .setTextHeight(4)
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .utilise(true)
+
+// Bsau
+plate.bsau
+  .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
+  .setTextHeight(2)
+  .setInBorder(true)
+  .utilise(true)
+
+// Border
+plate.border
+  .setThickness(2)
+  .setColour('black')
+  .utilise(true)
+
+// Render
+plate.render()
+```
+
 ## Standard Oblong 4D
 
 ![Oblong plate preview](images/standard-car-oblong-4d.svg)

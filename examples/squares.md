@@ -297,6 +297,7 @@ plate.bottomLine
 plate.bsau
   .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
   .setTextHeight(2)
+  .setInBorder(true)
   .utilise(true)
 
 // Border
