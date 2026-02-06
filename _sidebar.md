@@ -16,10 +16,19 @@
   * [BottomLine](/components/bottom-line.md)
   * [Bsau](/components/bsau.md)
 
-* Additonal Objects
+* Additional Objects
   * [RegistrationOverlayStore](/additional/registration-overlay-store.md)
   * [Meta](/additional/meta.md)
   * [File](/additional/file.md)
+
+* Render Objects
+  * [DrawDocument](/renderers/draw-document.md)
+  * [DrawBackground](/renderers/draw-background.md)
+  * [DrawBorder](/renderers/draw-border.md)
+  * [DrawRegistration](/renderers/draw-registration.md)
+  * [DrawSideBadge](/renderers/draw-side-badge.md)
+  * [DrawBottomLine](/renderers/draw-bottom-line.md)
+  * [DrawBsau](/renderers/draw-bsau.md)
 
 * Examples
   * [Oblongs](/examples/oblongs.md)

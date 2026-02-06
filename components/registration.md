@@ -5,13 +5,15 @@ The design properties for the registration component are as follows:
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |
 | **text** | string\|array | '' | The registration text. |
-| **textFontUrl** | string | '' | The path or url to the font file. |
+| **textFontSrc** | string | '' | The path or url to the font file. |
 | **textLineHeight** | number | 79 | The height in mm of the text. |
 | **textLineGap** | number | 19 | For multi-line plates, this is the gap in mm between each line. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
-| **textIsCutOut** | boolean | null | [See metal plates](/examples/oblongs.md#metal-oblong).  |
-| **textOffset** | array | null | X and Y text offset in mm. |
-| **doNotPrint** | boolean | null | If true, it will be for preview purposes only and will not be printed. |
+| **textIsCutOut** | boolean\|null | null | [See metal plates](/examples/oblongs.md#metal-oblong).  |
+| **textOffset** | array\|null | null | X and Y text offset in mm. |
+| **doNotPrint** | boolean\|null | null | If true, it will be for preview purposes only and will not be printed. |
+| **alignToCentreDoc** | boolean\|null | null | Optionally overrides default positioning for some edge cases ([see here](#setalignToCentreDoc))  |
+
 
 ## Methods <!-- {docsify-ignore} -->
 
@@ -54,6 +56,13 @@ Returns: `Registration`
 ### setTextOffset()
 
 Instructs the offset of text from its default position. It takes an *array* of numbers. The first item is the X offset in mm and the second is the Y offset in mm. For example `[3,5]`. It may be useful when using [registration overlays](/additional/registration-overlay-store.md) to create the impression of 3D text. [See this example](/examples/oblongs.md#standard-oblong-4d-stacked).
+
+Returns: `Registration`
+
+
+### setAlignToCentreDoc()
+
+Force-centres a registration to prevent it being placed off-centre to account for the presence of a side badge. This may be desirable for plates with short registrations because they can sometimes appear misaligned with the document-centred bottom line when there's a side badge. It takes a *boolean*.
 
 Returns: `Registration`
 

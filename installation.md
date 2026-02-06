@@ -3,7 +3,7 @@
 This JavaScript library does not exist in the official NPM registry. However, it can be installed from Plateit's private registry with a valid access token by executing the following command:
 
 ```bash
-PLATEIT_PACKAGES_TOKEN=your_token_here npm install https://packages.plateit.co.uk/plateit-generator-2.2.1.tgz
+PLATEIT_PACKAGES_TOKEN=your_token_here npm install https://packages.plateit.co.uk/plateit-generator-3.0.0.tgz
 ```
 
 The above command will *fail* without the following line in your project's `.npmrc` file:

@@ -39,7 +39,13 @@ plate.reg.setText('MY REG')
 
 You can learn more about this in the [next section](/objects.md).
 
-## External Asset Caching
+## Additional Options
+
+An object of additional options can be passed to the `Plate` class constructor in the second argument. There are currently two options available: `assetStore` and `ppi`.
+
+### assetStore
+
+>This option relates to asset caching.
 
 For front-end applications, typically there will be more than one Plate instantiated at a time to render both a front and rear plate simultaneously. To avoid needing to fetch the same asset twice, you can instantiate the Plate class with an optional asset caching helper like so:
 
@@ -47,6 +53,20 @@ For front-end applications, typically there will be more than one Plate instanti
 import { Plate, AssetStore } from 'plateit-generator'
 
 const assetStore = new AssetStore()
-const plateFront = new Plate('#front-plate-preview', assetStore)
-const plateRear  = new Plate('#rear-plate-preview', assetStore)
+const plateFront = new Plate('#front-plate-preview', { assetStore: assetStore })
+const plateRear  = new Plate('#rear-plate-preview', { assetStore: assetStore })
+```
+
+### ppi
+
+>This option relates to the intended print resolution.
+
+!> This option only affects plates that use raster images such as JPEGs or PNGs. Currently only [side badge covers](/components/side-badge.md#setCover) support this.
+
+By default, plates will be generated assuming a final print resolution of **150 pixels per inch (ppi)**. This resolution was chosen to avoid the file size overhead of 300 ppi while still maintaining good visual quality for most print applications.
+
+You can set an alternative resolution like so:
+
+```javascript
+const plate = new Plate('#number-plate-preview', { ppi: 300 })
 ```

@@ -10,7 +10,7 @@ Each Plate has several different design "components". Each component is represen
 
 ## Component Objects
 
-!>These are your controllers.
+!>These are your design controllers.
 
 You can access the plate's design components by referencing the following keys:
 
@@ -54,16 +54,37 @@ The public methods for each component are listed in their respective documentati
 
 ## Rendering
 
-To render the plate, call the `render()` method inside the main Plate object. It returns a Promise. If you want to execute some code only after a successful render, you'll need to wait until the Promise has been fulfilled.
+To render the entire plate, call the `render()` method inside the main Plate object, for example, `plate.render()`. It returns a Promise. If you want to execute some code only after a successful render, you'll need to wait until the Promise has been fulfilled.
 
 For example (note the `await` keyword):
 
 ```javascript
 await plate.render()
 
-const wasRegShrunk = plate.hasRegResized()
+const wasRegShrunk = plate.renderers.reg.hasRegResized()
 
 if(wasRegShrunk) {
   alert('The reg was shrunk to fit and therefore is no longer legal!')
 }
 ```
+
+## Render Objects
+
+For most use-cases, calling the master `plate.render()` method will suffice for any changes made, but there may be times when you want to re-render a specific component only. This can be achieved by calling `plate.renderers.[componentName].render()` (they all return a Promise).
+
+!> Note: some component renderers have interdependencies. For example, rendering a border before rendering a bottom line won't correctly cut out the section of the border for the bottom line. For this reason, calling the master `plate.render()` method is usually the correct approach.
+
+A couple of component-specific render objects have additional public methods you can take advantage of.
+
+| Key | Returns | Info |
+| --- | --- | --- |
+| `plate.renders.document` | [DrawDocument](/renderers/draw-document.md) | Resizes the SVG document. |
+| `plate.renders.background` | [DrawBackground](/renderers/draw-background.md) | Draws the background. |
+| `plate.renders.border` | [DrawBorder](/renderers/draw-border.md) | Draws the border. |
+| `plate.renders.reg` | [DrawRegistration](/renderers/draw-registration.md) | Draws the registration. |
+| `plate.renders.sideBadgeLeft` | [DrawSideBadge](/renderers/draw-side-badge.md) | Draws the left side badge. |
+| `plate.renderers.sideBadgeRight` | [DrawSideBadge](/renderers/draw-side-badge.md) | Draws the right side badge. |
+| `plate.renderers.bottomLine` | [DrawBottomLine](/renderers/draw-bottom-line.md) | Draws the bottom line. |
+| `plate.renders.bottomLineExtra` | [DrawBottomLine](/renderers/draw-bottom-line.md) | Draws the additional bottom line. |
+| `plate.renders.bsau` | [DrawBsau](/renderers/draw-bsau.md) | Draws the british standard mark. |
+

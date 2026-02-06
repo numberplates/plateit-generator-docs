@@ -234,7 +234,7 @@ plate.render().then(() => {
   // 3D/4D Letters are pre-cut to a specific size and stuck on.
   // If the reg has been shrunk to fit, it won't work.
   
-  if(plate.hasRegResized()) {
+  if(plate.renderers.reg.hasRegResized()) {
     alert('The reg is too long to accomodate 3D/4D letters')
   }
 
@@ -296,7 +296,7 @@ plate.render().then(() => {
   // 3D/4D Letters are pre-cut to a specific size and stuck on.
   // If the reg has been shrunk to fit, it won't work.
   
-  if(plate.hasRegResized()) {
+  if(plate.renderers.reg.hasRegResized()) {
     alert('The reg is too long to accomodate 3D/4D letters')
   }
 

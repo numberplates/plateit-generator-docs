@@ -10,11 +10,14 @@ The design properties for the side badge component are as follows:
 | **backgroundColour** | string\|array | 'blue' | The badge's background [colour](/other/colour.md). |
 | **isInsideBorder** | boolean | false | Positions the badge inside the border. |
 | **isFloating** | boolean | false | For legal, multi-line plates ([see below](#setfloating)). |
-| **imageUrl** | string | null | The path or url to the image file. |
+| **imageSrc** | string\|null | null | The path or url to the flag svg file. |
 | **text** | string\|array | '' | The side badge text. |
-| **textFontUrl** | string | '' | The path or url to the font file. |
+| **textFontSrc** | string | '' | The path or url to the font file. |
 | **textColour** | string\|array | 'white' | The [colour](/other/colour.md) of the text. |
-| **textIsCutOut** | boolean | null | Cuts out the text from the background.  |
+| **textIsCutOut** | boolean\|null | null | Cuts out the text from the background.  |
+| **coverSrc** | string\|null | null | The path or url to a rasterised cover image.  |
+| **coverOffset** | array\|null | null | X and Y offset from cover's default position in mm. |
+| **coverScale** | array\|null | null | A custom zoom factor of the cover image. |
 
 ## Methods <!-- {docsify-ignore} -->
 
@@ -64,7 +67,7 @@ Returns: `Boolean`
 
 Sets the desired flag image. It takes a *string* consisting of a relative path to the image file, or a fully formed URL.
 
-**Note:** it accepts SVG files only.
+**Note:** it accepts SVG files only. However, you can use a [side badge cover](#setCover) for raster images such as JPEGs and PNGs.
 
 Returns: `SideBadge`
 
@@ -89,6 +92,26 @@ Returns: `SideBadge`
 ### setTextCutOut()
 
 Instructs the text to be cut out of the background. It takes a *boolean*. The text needs to be set to black to work.
+
+Returns: `SideBadge`
+
+### setCover()
+
+Sets a rasterised image to cover the entire side badge area. It takes a *string* consisting of a relative path to the image file, or a fully formed URL. By default the image is centred both horizontally and vertically, and any overflow is cropped in a similar way to CSS `background-size: cover`.
+
+**Note:** you can obtain the default scale and position calculations from the side badge's [dedicated renderer](/renderers/draw-side-badge.md). These can be manually overridden using the methods below.
+
+Returns: `SideBadge`
+
+### setCoverOffset()
+
+Instructs the offset of the cover image from its default position. It takes an array of numbers. The first item is the X offset in mm and the second is the Y offset in mm. For example `[0,10]`.
+
+Returns: `SideBadge`
+
+### setCoverScale()
+
+Manually sets a scale multiplier for the cover image where `1` equates to the native image size at the intended print resolution and `0.5` is half the size, etc. It takes a *number* or *null* to use the default scale which is calculated based on the image's original dimensions.
 
 Returns: `SideBadge`
 

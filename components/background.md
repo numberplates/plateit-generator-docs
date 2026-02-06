@@ -5,7 +5,7 @@ The design properties for the background component are as follows:
 | Key | Expects | Default | Info |
 | --- | --- | --- | --- |
 | **backgroundColour** | string\|array | 'none' | The [colour](/other/colour.md) of the background. |
-| **shapeUrl** | string\|null | null | The path or url to a [shape template](/other/shaped-plates.md). |
+| **shapeSrc** | string\|null | null | The path or url to a [shape template](/other/shaped-plates.md). |
 | **doNotPrint** | boolean | true | If true, the background is for preview purposes only and will not be printed. |
 
 ## Methods <!-- {docsify-ignore} -->

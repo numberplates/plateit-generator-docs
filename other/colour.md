@@ -4,7 +4,7 @@ Colours can be set using a *string* or an *array* of strings, depending on wheth
 
 ## Solid Colours
 
-For a component to render a solid colour, simply pass a *string* with a valid coulour hex code, or a universally recognised css colour name. For example: `'black'` or `'#000000'`.
+For a component to render a solid colour, simply pass a *string* with a valid colour hex code, or a universally recognised css colour name. For example: `'black'` or `'#000000'`.
 
 ## Opacity
 
@@ -14,7 +14,7 @@ Opacity can be adjusted within the same string by appending an `@` sign followed
 
 For a component to render a gradient, you can pass an *array* of strings following the same rules as above. By default, the gradient will be *linear* and will render from *left to right*.
 
-To control the type of gradient, add a final string the array consisting of one of the following characters:
+To control the type of gradient, add a final string to the array consisting of one of the following characters:
 
 `x` - Renders a *linear* gradient from left to right (this is the default)
 
