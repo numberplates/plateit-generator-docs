@@ -8,7 +8,7 @@ The design properties for the bsau component are as follows:
 | **textFontSrc** | string | '' | The path or url to the font file. |
 | **textLineHeight** | number | 2 | The height in mm of the text. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
-| **isInBorder** | boolean | false | Embeds the bsau into the border if true |
+| **isInBorder** | boolean | true | Embeds the bsau into the border if true |
 
 !> The Bsau component has no effect on shaped plates. Use the `bottomLineExtra` controller instead. [See here](/examples/shaped.md) for examples.
 
@@ -40,7 +40,7 @@ Returns: `Bsau`
 
 ### setInBorder()
 
-The bsau can be embedded in the border. It takes a *boolean*.
+The bsau is embedded in the border by default but this can be opted out of here. It takes a *boolean*.
 
 Returns: `Bsau`
 
