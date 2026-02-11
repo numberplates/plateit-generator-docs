@@ -8,6 +8,7 @@ The design properties for the registration component are as follows:
 | **textFontSrc** | string | '' | The path or url to the font file. |
 | **textLineHeight** | number | 79 | The height in mm of the text. |
 | **textLineGap** | number | 19 | For multi-line plates, this is the gap in mm between each line. |
+| **textCharGap** | number\|array\|null | null | Custom character spacing. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
 | **textIsCutOut** | boolean\|null | null | [See metal plates](/examples/oblongs.md#metal-oblong).  |
 | **textOffset** | array\|null | null | X and Y text offset in mm. |
@@ -38,6 +39,21 @@ Returns: `Registration`
 ### setTextLineGap()
 
 If the registration text spans across multiple lines, this method will dictate the size of the gap in mm between each line. It takes a *number*.
+
+Returns: `Registration`
+
+### setTextCharGap()
+
+By default the space between the characters is determined by the font's in-built kerning rules. This can be overridden using this method.
+
+It expects one of the following:
+
+* *Number* - a single number value (mm) will be applied to all characters on all lines.
+* *Array of numbers* - more granular character-by-character control. Applies to every line of the plate (if there is more than one).
+* *Array of array of numbers* - more granular character-by-character control for a multi-line plate. Each sub array represents a new line.
+* *Null* - reverts to the default character kerning rules baked into the font file.
+
+You can see an example [here](/examples/squares.md#standard-car-square-with-custom-character-spacing).
 
 Returns: `Registration`
 

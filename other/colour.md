@@ -29,35 +29,35 @@ To reverse a gradient, define the colour values in the opposite order.
 ### Solid Colours <!-- {docsify-ignore} -->
 
 ```javascript
-// Set a blue side badge with a css-recognised colour name
+// Set a blue side badge with a css-recognised colour name.
 plate.sideBadgeLeft.setBackgroundColour('blue')
 
-// Set a blue side badge with a colour hex code
+// Set a blue side badge with a colour hex code.
 plate.sideBadgeLeft.setBackgroundColour('#0000ff')
 
-// Set a blue side badge with a colour hex code and lower its opacity
+// Set a blue side badge with a colour hex code and lower its opacity.
 plate.sideBadgeLeft.setBackgroundColour('#0000ff@0.5')
 ```
 
 ### Gradients <!-- {docsify-ignore} -->
 
 ```javascript
-// A left-to-right, blue-to-red gradient using css colour names
+// A left-to-right, blue-to-red gradient using css colour names.
 plate.sideBadgeLeft.setBackgroundColour(['blue', 'red'])
 
-// A left-to-right, blue-to-red gradient using colour hex codes
+// A left-to-right, blue-to-red gradient using colour hex codes.
 plate.sideBadgeLeft.setBackgroundColour(['#0000ff', '#ff0000'])
 
-// A top-to-bottom, blue-to-red gradient
+// A top-to-bottom, blue-to-red gradient.
 plate.sideBadgeLeft.setBackgroundColour(['blue', 'red', 'y'])
 
-// A radial, blue-to-red gradient
+// A radial, blue-to-red gradient.
 plate.sideBadgeLeft.setBackgroundColour(['blue', 'red', 'r'])
 
-// A top-to-bottom, blue-to-red-to-yellow gradient
+// A top-to-bottom, blue-to-red-to-yellow gradient.
 plate.sideBadgeLeft.setBackgroundColour(['blue', 'red', 'yellow', 'y'])
 
-// A top-to-bottom, blue-to-red gradient with differing opacities
+// A top-to-bottom, blue-to-red gradient with differing opacities.
 plate.sideBadgeLeft.setBackgroundColour(['blue@0.5', 'red', 'y'])
 
 ```
