@@ -5,18 +5,18 @@
 ![Shaped plate preview](images/shaped.svg)
 
 ```javascript
-// Document
+// Document.
 plate.document
   .setWidth(639)
   .setHeight(179)
 
-// Background
+// Background.
 plate.background
   .setBackgroundColour('yellow')
   .setShape('../assets/shapes/JaguarXTypeEst_639x179.svg')
   .utilise(true)
 
-// Reg
+// Reg.
 plate.reg
   .setText('NG25 XYZ')
   .setTextColour('black')
@@ -24,21 +24,21 @@ plate.reg
   .setTextFont('../assets/fonts/CharlesWright-Car.ttf')
   .utilise(true)
 
-// Bottom Line
+// Bottom Line.
 plate.bottomLine
-  .setText('ACME Number Plates, SW1A 2AA')
+  .setText('Acme Number Plates SW1A 2AA')
   .setTextHeight(4)
   .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
   .utilise(true)
 
-// Bottom Line Extra
+// Bottom Line Extra.
 plate.bottomLineExtra
-  .setText('BSAU 145e')
-  .setTextHeight(2)
+  .setText('Acme BSAU 145e')
+  .setTextHeight(3)
   .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
   .utilise(true)
 
-// Render
+// Render.
 plate.render()
 ```
 
@@ -49,18 +49,18 @@ plate.render()
 > A side badge on a shaped plate will be as tall as its boundary permits in the shape's template file (see image). If you'd prefer it to be the same height as the registration, use a "floating" side badge instead, as per the next example.
 
 ```javascript
-// Document
+// Document.
 plate.document
   .setWidth(639)
   .setHeight(179)
 
-// Background
+// Background.
 plate.background
   .setBackgroundColour('yellow')
   .setShape('../assets/shapes/JaguarXTypeEst_639x179.svg')
   .utilise(true)
 
-// Reg
+// Reg.
 plate.reg
   .setText('NG25 XYZ')
   .setTextColour('black')
@@ -68,27 +68,27 @@ plate.reg
   .setTextFont('../assets/fonts/CharlesWright-Car.ttf')
   .utilise(true)
 
-// Bottom Line
+// Bottom Line.
 plate.bottomLine
-  .setText('ACME Number Plates, SW1A 2AA')
+  .setText('Acme Number Plates SW1A 2AA')
   .setTextHeight(4)
   .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
   .utilise(true)
 
-// Bottom Line Extra
+// Bottom Line Extra.
 plate.bottomLineExtra
-  .setText('BSAU 145e')
-  .setTextHeight(2)
+  .setText('Acme BSAU 145e')
+  .setTextHeight(3)
   .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
   .utilise(true)
 
-// Border
+// Border.
 plate.border
   .setThickness(2)
   .setColour('black')
   .utilise(true)
 
-// Left Side Badge
+// Left Side Badge.
 plate.sideBadgeLeft
   .setWidth(44)
   .setBackgroundColour('blue')
@@ -98,7 +98,7 @@ plate.sideBadgeLeft
   .setInsideBorder(true)
   .utilise(true)
 
-// Render
+// Render.
 plate.render()
 ```
 
@@ -107,18 +107,18 @@ plate.render()
 ![Shaped plate preview](images/shaped-with-border-and-floating-side-badge.svg)
 
 ```javascript
-// Document
+// Document.
 plate.document
   .setWidth(639)
   .setHeight(179)
 
-// Background
+// Background.
 plate.background
   .setBackgroundColour('yellow')
   .setShape('../assets/shapes/JaguarXTypeEst_639x179.svg')
   .utilise(true)
 
-// Reg
+// Reg.
 plate.reg
   .setText('NG25 XYZ')
   .setTextColour('black')
@@ -126,27 +126,27 @@ plate.reg
   .setTextFont('../assets/fonts/CharlesWright-Car.ttf')
   .utilise(true)
 
-// Bottom Line
+// Bottom Line.
 plate.bottomLine
-  .setText('ACME Number Plates, SW1A 2AA')
+  .setText('Acme Number Plates SW1A 2AA')
   .setTextHeight(4)
   .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
   .utilise(true)
 
-// Bottom Line Extra
+// Bottom Line Extra.
 plate.bottomLineExtra
-  .setText('BSAU 145e')
-  .setTextHeight(2)
+  .setText('Acme BSAU 145e')
+  .setTextHeight(3)
   .setTextFont('../assets/fonts/OpenSans-Regular.ttf')
   .utilise(true)
 
-// Border
+// Border.
 plate.border
   .setThickness(2)
   .setColour('black')
   .utilise(true)
 
-// Left Side Badge
+// Left Side Badge.
 plate.sideBadgeLeft
   .setWidth(44)
   .setBackgroundColour('blue')
@@ -157,6 +157,6 @@ plate.sideBadgeLeft
   .setInsideBorder(true)
   .utilise(true)
 
-// Render
+// Render.
 plate.render()
 ```
