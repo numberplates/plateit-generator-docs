@@ -6,7 +6,7 @@ The design properties for the bsau component are as follows:
 | --- | --- | --- | --- |
 | **text** | string\|array | 'BSAU 145E' | The bsau text. |
 | **textFontSrc** | string | '' | The path or url to the font file. |
-| **textLineHeight** | number | 2 | The height in mm of the text. |
+| **textLineHeight** | number | 3 | The height in mm of the text. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
 | **isInBorder** | boolean | true | Embeds the bsau into the border if true |
 
