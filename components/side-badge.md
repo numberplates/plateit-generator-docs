@@ -101,6 +101,8 @@ Sets a rasterised image to cover the entire side badge area. It takes a *string*
 
 **Note:** you can obtain the default scale and position calculations from the side badge's [dedicated renderer](/renderers/draw-side-badge.md). These can be manually overridden using the methods below.
 
+You can find more information about side badge covers [here](/other/side-badge-covers.md).
+
 Returns: `SideBadge`
 
 ### setCoverOffset()

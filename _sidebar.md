@@ -39,3 +39,4 @@
   * [Import / Export](/other/import-export.md)
   * [Colour](/other/colour.md)
   * [Shaped Plates](/other/shaped-plates.md)
+  * [Side Badge Covers](/other/side-badge-covers.md)
