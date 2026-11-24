@@ -17,7 +17,7 @@ The design properties for the side badge component are as follows:
 | **textIsCutOut** | boolean\|null | null | Cuts out the text from the background.  |
 | **coverSrc** | string\|null | null | The path or url to a rasterised cover image.  |
 | **coverOffset** | array\|null | null | X and Y offset from cover's default position in mm. |
-| **coverScale** | array\|null | null | A custom zoom factor of the cover image. |
+| **coverScale** | number\|null | null | A custom zoom factor of the cover image. |
 
 ## Methods <!-- {docsify-ignore} -->
 

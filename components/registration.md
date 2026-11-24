@@ -6,7 +6,7 @@ The design properties for the registration component are as follows:
 | --- | --- | --- | --- |
 | **text** | string\|array | '' | The registration text. |
 | **textFontSrc** | string | '' | The path or url to the font file. |
-| **textLineHeight** | number | 79 | The height in mm of the text. |
+| **textHeight** | number | 79 | The height in mm of the text. |
 | **textLineGap** | number | 19 | For multi-line plates, this is the gap in mm between each line. |
 | **textCharGap** | number\|array\|null | null | Custom character spacing. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
@@ -30,7 +30,7 @@ Sets the desired font. It takes a *string* consisting of a relative path to the 
 
 Returns: `Registration`
 
-### setTextLineHeight()
+### settextHeight()
 
 Sets the height of the text in mm. It takes a *number*.
 

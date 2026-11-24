@@ -6,7 +6,7 @@ The design properties for the bottom line component are as follows:
 | --- | --- | --- | --- |
 | **text** | string\|array | '' | The bottom line text. |
 | **textFontSrc** | string | '' | The path or url to the font file. |
-| **textLineHeight** | number | 4 | The height in mm of the text. |
+| **textHeight** | number | 4 | The height in mm of the text. |
 | **textColour** | string\|array | 'black' | The [colour](/other/colour.md) of the text. |
 
 ## Methods <!-- {docsify-ignore} -->
@@ -23,7 +23,7 @@ Sets the desired font. It takes a *string* consisting of a relative path to the 
 
 Returns: `BottomLine`
 
-### setTextLineHeight()
+### settextHeight()
 
 Sets the height of the text in mm. It takes a *number*.
 
