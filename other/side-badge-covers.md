@@ -46,7 +46,7 @@ Cover data urls are included by default when [exporting](/other/import-export.md
 
 Pass `false` to `exportObject(false)` to replace cover data URLs with SVG image references as illustrated above. This object will require the accompanying SVG and cannot be resolved by `importObject()` alone. Regular cover URLs and file paths remain unchanged.
 
-## Plateit Server-side API
+## Plateit Server-Side API
 
 If sending an SVG and an accompanying `design_object` to the [Plateit server-side API](https://numberplates.github.io/plateit-api-docs), you can safely set both export arguments to `false`.
 

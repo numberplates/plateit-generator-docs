@@ -30,18 +30,6 @@ Promises to return the final design as an SVG string. By default it will *not* i
 
 Returns: `Promise<string>`
 
-### importXml()
-
-Takes an XML string enveloped in a `<plate>` element and sets a fresh representation of the plate. It takes a *string*.
-
-Returns: `File`
-
-### exportXml()
-
-Returns the final design as an XML string enveloped in a `<plate>` element.
-
-Returns: `string`
-
 ### extractMetadataFromSvg()
 
 Takes an SVG string exported from this application (with metadata) and returns its design metadata as an object. It takes a *string*.
